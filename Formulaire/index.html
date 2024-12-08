@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Formulaire</title>
+</head>
+<body>
+    <h1 id="topHeader">Formulaire</h1>
+    
+    <!--Captcha à faire disparaitre après avoir cliqué-->
+    <div class="_captcha">
+        <button id="monBouton" onclick="faireDisparaitre()">Cliquez-moi</button>
+        <p id="Text_captcha">Cliquez pour accéder à la suite</p>
+        <p id="After_Captcha" style="display: none;">Bien, commençons le formulaire</p>
+    </div>
+
+    <!-- Masquer cette section par défaut -->
+    <span class="questions" style="display: none;">
+
+        <label for="prenom">Prénom:</label>
+        <input type="text" id="prenom" placeholder="Julien"class="input_questions">
+        <br>
+        <label for="nom_de_famille">Nom de Famille</label>
+        <input type="text" id="nom_de_famille" placeholder="Bowé"class="input_questions">
+        <br>
+        <label for="birthday">Date de naissance:</label>
+        <input type="date" id="birthday"class="input_questions">
+        <br>
+        <label for="email">Votre Email:</label>
+        <input type="email" id="email" placeholder="julien.bowé@gmail.com"class="input_questions">
+        <br>
+        <label for="tel">Tel:</label>
+        <input type="tel" id="tel" placeholder="0604040404" class="input_questions">
+    </span>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</body>
+</html
