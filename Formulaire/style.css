@@ -13,28 +13,29 @@ body{
     font-weight: normal;
 }
 
-#Text_captcha{
-    font-size: 30px ;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: white;
+#monBouton{
+    width: 225px;
+    height: 50px;
+    font-size:large;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
-
 ._captcha{
     vertical-align: top;
     text-align: center;
-}
-#After_Captcha {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: xx-large;
     color: white;
+
 }
+
 .questions {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 40px;
+    font-size: 30px;
     color: white;
     border: 3px solid white;
     border-radius: 8px;
     width: max-content;
+    height: 251px;
     background: linear-gradient(to top, rgb(52, 58, 63), hsl(256, 57%, 68%), hsl(335, 60%, 66%));
     margin: auto;
 }
@@ -42,4 +43,19 @@ body{
     width: 180px;
     height: 25px;
     background-color: blanchedalmond;
+    font-size: 15px;
+    font-weight:bold;
+}
+#select_genre {
+   background-color: blanchedalmond;
+   font-size: 15px;
+}
+
+#submit{
+    background-color: white;
+    box-shadow: 1px 2px;
+    text-align: center;
+    margin: 0 auto; 
+    margin-top: 10px;
+    display: block;
 }
