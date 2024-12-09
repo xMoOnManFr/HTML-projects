@@ -1,7 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <title>Formulaire</title>
+    <link rel="icon" type="image/x-icon" href="/Images/favicon.png">
 </head>
 <body>
     <h1 id="topHeader">Formulaire</h1>
@@ -14,25 +15,37 @@
     </div>
 
     <!-- Masquer cette section par défaut -->
-    <span class="questions" style="display: none;">
+    <form class="questions" style="display: none;" method="post" id="formulaire">
 
         <label for="prenom">Prénom:</label>
-        <input type="text" id="prenom" placeholder="Julien"class="input_questions">
+        <input type="text" id="prenom" placeholder="Jean"class="input_questions" autocomplete="off" value="" pattern="[A-Z][a-z]{1,8}" required> 
         <br>
-        <label for="nom_de_famille">Nom de Famille</label>
-        <input type="text" id="nom_de_famille" placeholder="Bowé"class="input_questions">
+        <label for="nom_de_famille">Nom de Famille:</label>
+        <input type="text" id="nom_de_famille" placeholder="Pierre"class="input_questions" autocomplete="off" value="" pattern="^[a-zA-Z]+(-[a-zA-Z]+)?$"
+        required>
         <br>
         <label for="birthday">Date de naissance:</label>
-        <input type="date" id="birthday"class="input_questions">
+        <input type="date" id="birthday"class="input_questions" autocomplete="off" value="" >
         <br>
         <label for="email">Votre Email:</label>
-        <input type="email" id="email" placeholder="julien.bowé@gmail.com"class="input_questions">
+        <input type="text" id="email" placeholder="Jean.pierre@domaine.com"class="input_questions" autocomplete="off" value="" >
         <br>
         <label for="tel">Tel:</label>
-        <input type="tel" id="tel" placeholder="0604040404" class="input_questions">
-    </span>
+        <input type="tel" id="tel" placeholder="1234567890" class="input_questions" autocomplete="off" value="" required>
+        <br>
+        <label for="select_genre">Genre:</label>
+        <select id="select_genre" value="">
+            <option value="homme">Homme</option>
+            <option value="femme">Femme</option>
+            <option value="...">...</option>
+            <option value="rien">Ne souhaite pas dévoiler</option>
+        </select>
+        <br>
+        <input type="submit" id="submit">
+    </form> 
 
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
+    <script src="Inputs.js"></script>
 </body>
-</html
+</html>
