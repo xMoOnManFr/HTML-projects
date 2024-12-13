@@ -1,17 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire</title>
+</head>
+<body>
+    <div id="bouttons">
+    <button id="register_button">REGISTER</button>
+    <button id="login_button">LOG IN</button>    
+    </div>
+    <link rel="stylesheet" src="/css/style_index.css">
+</body>
+</html>
+
 <?php
-//appel à la base de données
-require 'config.php';
-
-//requête Select
-$sql = 'Select * from client';
-
-//Affichage des données avec une boucle foreach
-foreach($db->query($sql) as $row) {
-    print $row['prenom'] . "<br>";
-    print $row['ndfm'] . "\t";
-    print $row['date_naissance'] . "\t";
-    print $row['email'] . "\t";
-    print $row['username'] . "\t";
-    print $row['password'] . "\t";
-    
-}
+?>

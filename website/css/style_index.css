@@ -1,0 +1,21 @@
+body {
+    background: rgb(187,87,52);
+    background: linear-gradient(90deg, rgba(187,87,52,1) 0%, rgba(180,104,55,1) 35%, rgba(255,0,0,1) 100%);
+  }
+.divbouton {
+    margin: auto;
+    position:relative ;
+    display: block;
+    width:max-content;
+    margin-top: 50px;
+}
+.bouton{
+    font-size: large;
+}
+.bouton:hover{
+    transform: scale(1.15);
+    opacity: 70%; 
+}
+#_button {
+    margin-right: 10px;
+}
