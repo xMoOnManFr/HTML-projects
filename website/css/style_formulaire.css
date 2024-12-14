@@ -1,5 +1,4 @@
 body{
-    background-color: black;
     height: 100vh;
     background: linear-gradient(to top, black, hsl(256, 57%, 68%), hsl(335, 60%, 66%));
 }

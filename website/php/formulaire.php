@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <title>Formulaire</title>
+    <title>Register</title>
     <link rel="icon" type="image/x-icon" href="/Images/favicon.png">
 </head>
 <body>
-    <h1 id="topHeader">Formulaire</h1>
+    <h1 id="topHeader">Formulaire d'inscription</h1>
     
     <!--Captcha à faire disparaitre après avoir cliqué-->
     <div class="_captcha">
@@ -41,12 +41,13 @@
             <option value="rien">Ne souhaite pas se prononcer</option>
         </select>
         <br>
+<!--Inclure la questions username et password et les stocker dans la base de donnée-->
         <input type="submit" id="submit" class="submit">
     </form> 
 
-    <link rel="stylesheet" href="style_formulaire.css">
-    <script src="script_form.js"></script>
-    <script src="Inputs_form.js"></script>
+    <link rel="stylesheet" href="/css/style_formulaire.css">
+    <script src="/javascript/script_form.js"></script>
+    <script src="/javascript/Inputs_form.js"></script>
     
 </body>
 </html>

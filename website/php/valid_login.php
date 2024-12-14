@@ -1,6 +1,5 @@
 <?php
 include("config.php");
-
 $username = $_POST["username"];
 $password = $_POST["password"];
 
@@ -14,7 +13,7 @@ foreach($db->query($sql) as $row) {
     if( $row['username'] == $username && $row['password'] == $password ) {
         $result = "existe";
         ob_start();
-         header("Location: template profil.html");
+         header("Location: index.php");
         ob_end_flush();
     }else{
         $result = "existe pas";

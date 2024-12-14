@@ -1,7 +1,14 @@
 body {
     background: rgb(187,87,52);
-    background: linear-gradient(90deg, rgba(187,87,52,1) 0%, rgba(180,104,55,1) 35%, rgba(255,0,0,1) 100%);
-  }
+    background: linear-gradient(90deg, rgb(212, 123, 91) 0%, rgba(180,104,55,1) 35%, hsl(22, 64%, 27%) 100%);
+}
+
+#main_text{
+    display: block;
+    text-align: center;
+    font-family: Noto Sans ,sans-serif;
+}  
+
 .divbouton {
     margin: auto;
     position:relative ;
@@ -11,10 +18,12 @@ body {
 }
 .bouton{
     font-size: large;
+    background-color: transparent;
+    border: 0px;
+    font-family: DejaVu Sans Mono, monospace;
 }
 .bouton:hover{
-    transform: scale(1.15);
-    opacity: 70%; 
+    transform: scale(1.25);
 }
 #_button {
     margin-right: 10px;

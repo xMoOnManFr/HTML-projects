@@ -6,13 +6,21 @@
     <title>Formulaire</title>
 </head>
 <body>
-    <div id="bouttons">
-    <button id="register_button">REGISTER</button>
-    <button id="login_button">LOG IN</button>    
+
+    <span class="main_text">
+        <h2 id="main_text">Bienvenue sur l'index</h2>
+    </span>
+
+    <div class="divbouton">
+    <a href="/php/formulaire.php" id="formulaire"><button class="bouton">REGISTER</button></a>
+    <a href="/php/login_form.php" id="login_form"><button class="bouton">LOG IN</button></a>
     </div>
-    <link rel="stylesheet" src="/css/style_index.css">
+
+
+    <link href="/css/style_index.css" rel="stylesheet">
 </body>
 </html>
 
 <?php
+ 
 ?>
